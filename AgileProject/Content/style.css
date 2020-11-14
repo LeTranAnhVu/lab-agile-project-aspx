@@ -1,0 +1,108 @@
+﻿/*variables*/
+:root {
+    --main-color: #7AB180;
+    --main-color-light: #aae5b066;
+    --header-height: 60px;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--main-color);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+#brand {
+    color: white;
+    font-size: 2em;
+}
+
+main {
+    height: calc(100vh - var(--header-height));
+}
+
+.pane {
+    display: flex;
+    height: 100%;
+}
+
+.col-3 {
+    flex-grow: 3;
+}
+
+.col-1 {
+    flex-grow: 1;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card {
+    padding: 20px;
+    background: var(--main-color-light);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    margin-top: 0;
+}
+
+#card-info {
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.card-header {
+}
+
+.text-group {
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+    .input-group label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .input-group input, select {
+        padding: 5px;
+        font-size: 1em;
+        width: 90%;
+    }
+
+#search-btn {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 200px;
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+    .btn:hover {
+        background-color: var(--main-color);
+        color: white;
+    }
+
+.error-message {
+    color: red;
+    font-style: italic;
+}
